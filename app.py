@@ -75,22 +75,11 @@ def get_model():
     #model = pickle.load(open('export.pkl'), 'rb')
     model = load_learner(fname ='export.pkl')
     print("Model loaded!")
-
-'''
-def load_image(img_path):
-
-    img = image.load_img(img_path, target_size=(224, 224))
-    img_tensor = image.img_to_array(img)        
-    img_tensor = np.expand_dims(img_tensor, axis=0) 
-    img_tensor /= 255.
-    return img_tensor
-
-'''    
-predt = []
+   
 def prediction(img_path):
     #new_image = load_image(img_path)
     pred = model.predict(img_path)
-    predt.append(pred[0])
+    predt = str(pred[0])
     predt = predt.capitalize()
     return(predt)
 
