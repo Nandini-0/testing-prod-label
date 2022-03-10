@@ -63,14 +63,14 @@ def get_category_detail(label):
         cat = 'Apparel'
     else:
         for i in All_dictionary:
-        for j in i.values():
-            for k in j:
-                for l in k.values():
-                    if label in l:
-                        sub_cat = np.array(list(k.keys()))
-                        cat = np.array(list(i.keys()))
-                        sub_cat = ''.join(map(str,sub_cat))
-                        cat = ''.join(map(str,cat))
+            for j in i.values():
+                for k in j:
+                    for l in k.values():
+                        if label in l:
+                            sub_cat = np.array(list(k.keys()))
+                            cat = np.array(list(i.keys()))
+                            sub_cat = ''.join(map(str,sub_cat))
+                            cat = ''.join(map(str,cat))
     return (sub_cat,cat)
     
 
