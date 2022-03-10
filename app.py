@@ -65,6 +65,8 @@ def get_category_detail(label):
                     if label in l:
                         sub_cat = np.array(list(k.keys()))
                         cat = np.array(list(i.keys()))
+                        sub_cat = ''.join(map(str,sub_cat))
+                        cat = ''.join(map(str,cat))
                         return (sub_cat,cat)
 
 def get_model():
@@ -109,7 +111,7 @@ def predict():
         file.save(file_path)
         product = prediction(file_path)
         sub_cat,cat = get_category_detail(product)
-    return render_template('predict.html', product = product, sub_cat = str(sub_cat),cat = str(cat),user_image = file_path)  
+    return render_template('predict.html', product = product, sub_cat = sub_cat,cat = cat,user_image = file_path)  
 
 
 if __name__ == "__main__":
