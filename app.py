@@ -21,22 +21,22 @@ pathlib.WindowsPath = pathlib.PosixPath
 
 #--------------------------------------------Category----------------------------------------------
 All_dictionary = [
-    {'Apparel':[{'Topwear':['Tshirt','Shirt','Dress','Jackets','Tops','Undershirt','Pullover']},
-            {'Bottomwear':  ['Jeans','Pants','Shorts','Skirts','Trousers']},
-            {'Outerwear': ['Coats','Sweater','Hoodie','Cardigan','Blazer','Knits']}]},
+    {'Apparel':[{'Topwear':['Tshirt','Shirt','Dress','Jacket','Tops','Undershirt','Pullover']},
+            {'Bottomwear':  ['Jeans','Pant','Shorts','Skirt','Trouser']},
+            {'Outerwear': ['Coat','Sweater','Hoodie','Cardigan','Blazer','Knit']}]},
             
-    {'Footwear':[{'Casual':['Sandals','Flipflop','Boots','Heels','Flats']},
+    {'Footwear':[{'Casual':['Sandal','Flipflop','Boots','Heels','Flats']},
             {'Formal': ['Shoes']},
-            {'Sports':['Seakers']}]},
+            {'Sports':['Sneaker']}]},
             
     {'Accessories': [{'Bags' : ['Bagpack','Handbag','Dufflebag','Slingbag']},
-                {'Wristwear' : ['Watch','Cufflinks','Gloves','Wristband']},
-                {'Eyewear' : ['Sunglasses']},
-                {'Jewellery' : ['Necklace','Ring','Bracelet','Pendent','Earrings']},
-                {'hats' : ['Caps','Hats','Beanie cap']},
-                {'Others' : ['Scarf','Socks','Wallets','Belts','Ties']}]},
+                {'Wristwear' : ['Watch','Cufflink','Gloves','Wristband']},
+                {'Eyewear' : ['Sunglass']},
+                {'Jewellery' : ['Necklace','Ring','Bracelet','Pendent','Earring']},
+                {'hats' : ['Cap','Hat','Beanie cap']},
+                {'Others' : ['Scarf','Socks','Wallet','Belt','Ties']}]},
 
-    {'Furniture': [{'Storage' : ['wardrobe','Trolleys','Drawer','Cabinet']},
+    {'Furniture': [{'Storage' : ['Wardrobe','Trolley','Drawer','Cabinet']},
                 {'Display' : ['Table','Hanger']},
                 {'Others' : ['Chair','Stool','Sofa']}]}
                 ]
@@ -45,11 +45,11 @@ All_dictionary = [
 
 
 
-All_categories = ['Tshirt','Shirt','Dress','Jackets','Tops','Undershirt','Pullover','Jeans','Pants','Shorts','Skirts','Trousers',
-                    'Coats','Sweater','Hoodie','Cardigan','Blazer','Knits','Sandals','Flipflop','Boots','Heels','Flats','Shoes',
-                    'Seakers','Bagpack','Handbag','Dufflebag','Slingbag','Watch','Cufflinks','Gloves','Wristband','Sunglasses',
-                    'Necklace','Ring','Bracelet','Pendent','Earrings','Caps','Hats','Beanie cap','Scarf','Socks','Wallets','Belts',
-                    'Ties','wardrobe','Trolleys','Drawer','Cabinet','Table','Hanger','Chair','Stool','Sofa']
+All_categories = ['Tshirt','Shirt','Dress','Jacket','Tops','Undershirt','Pullover','Jeans','Pant','Shorts','Skirt','Trouser',
+                    'Coat','Sweater','Hoodie','Cardigan','Blazer','Knit','Sandal','Flipflop','Boots','Heels','Flats','Shoes',
+                    'Sneaker','Bagpack','Handbag','Dufflebag','Slingbag','Watch','Cufflink','Gloves','Wristband','Sunglass',
+                    'Necklace','Ring','Bracelet','Pendent','Earring','Cap','Hat','Beanie cap','Scarf','Socks','Wallet','Belt',
+                    'Ties','Wardrobe','Trolley','Drawer','Cabinet','Table','Hanger','Chair','Stool','Sofa']
 
 
 
