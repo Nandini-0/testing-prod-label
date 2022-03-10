@@ -86,12 +86,13 @@ def load_image(img_path):
     return img_tensor
 
 '''    
-
+predt = []
 def prediction(img_path):
     #new_image = load_image(img_path)
     pred = model.predict(img_path)
-    pred[0] = pred[0].capitalize()
-    return(pred[0])
+    predt.append(pred[0])
+    predt = predt.capitalize()
+    return(predt)
 
 get_model()
 
