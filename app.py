@@ -63,8 +63,8 @@ def get_category_detail(label):
             for k in j:
                 for l in k.values():
                     if label in l:
-                        sub_cat = k.keys()
-                        cat = i.keys()
+                        sub_cat = np.array(list(k.keys()))
+                        cat = np.array(list(i.keys()))
                         return (sub_cat,cat)
 
 def get_model():
