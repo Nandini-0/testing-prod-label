@@ -90,7 +90,7 @@ def load_image(img_path):
 def prediction(img_path):
     #new_image = load_image(img_path)
     pred = model.predict(img_path)
-    pred = pred.str.capitalize()
+    pred[0] = pred[0].str.capitalize()
     if pred[0] == 'Outwear':
         return('Outerwear')
     
