@@ -58,7 +58,11 @@ All_categories = ['Tshirt','Shirt','Dress','Jacket','Tops','Undershirt','Pullove
 app = Flask(__name__)
 
 def get_category_detail(label):
-    for i in All_dictionary:
+    if label == 'Innerwear':
+        sub_cat = 'Innerwear'
+        cat = 'Apparel'
+    else:
+        for i in All_dictionary:
         for j in i.values():
             for k in j:
                 for l in k.values():
@@ -67,7 +71,8 @@ def get_category_detail(label):
                         cat = np.array(list(i.keys()))
                         sub_cat = ''.join(map(str,sub_cat))
                         cat = ''.join(map(str,cat))
-                        return (sub_cat,cat)
+    return (sub_cat,cat)
+    
 
 def get_model():
     global model
