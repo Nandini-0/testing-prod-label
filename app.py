@@ -90,7 +90,7 @@ def load_image(img_path):
 def prediction(img_path):
     #new_image = load_image(img_path)
     pred = model.predict(img_path)
-    pred[0] = pred[0].apply(lambda x: x.capitalize())
+    pred[0] = pred[0].capitalize()
     return(pred[0])
 
 get_model()
