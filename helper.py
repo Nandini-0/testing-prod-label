@@ -24,5 +24,5 @@ def extract_label(img):
             return i
 
 
-image = '02.png'
-extract_label(image)
+#image = '02.png'
+#extract_label(image)
