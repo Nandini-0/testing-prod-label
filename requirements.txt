@@ -6,4 +6,4 @@ flask
 ipywidgets
 gunicorn
 flask-cors
-easyocr
+
