@@ -7,3 +7,4 @@ ipywidgets
 gunicorn
 flask-cors
 keras
+tensorflow
