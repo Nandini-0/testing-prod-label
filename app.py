@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request
 from fastai.vision import *
+from fastai.learner import *
 import numpy as np 
 import pandas as pd
 #from fastai.vision.widgets import *
