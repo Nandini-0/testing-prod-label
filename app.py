@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-#from fastai.vision import *
+from fastai.vision.all import *
 #from fastai.vision import load_learner
 import numpy as np 
 import pandas as pd
