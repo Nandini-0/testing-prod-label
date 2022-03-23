@@ -15,9 +15,9 @@ import pickle
 #pathlib.PosixPath = pathlib.WindowsPath
 
 
-import pathlib
-plt = platform.system()
-pathlib.WindowsPath = pathlib.PosixPath
+#import pathlib
+#plt = platform.system()
+#pathlib.WindowsPath = pathlib.PosixPath
 
 
 #--------------------------------------------Category----------------------------------------------
