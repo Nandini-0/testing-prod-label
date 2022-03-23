@@ -87,8 +87,7 @@ def prediction(img_path):
         pred = model.predict(img_path)
         predt = str(pred[0])
         predt = predt.capitalize()
-        return(predt)
-    return label
+    return(predt)
 
 get_model()
 
