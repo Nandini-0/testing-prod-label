@@ -8,7 +8,6 @@ import os
 from PIL import Image
 from fastai import *
 #from fastai.vision.data import ImageDataLoaders
-from helper import extract_label
 import pickle
 #import pathlib
 #temp = pathlib.PosixPath
@@ -83,8 +82,7 @@ def get_model():
     print("Model loaded!")
    
 def prediction(img_path):
-    label = extract_label(img_path)
-    if label is not None:
+    if img_path is not None:
         pred = model.predict(img_path)
         predt = str(pred[0])
         predt = predt.capitalize()
@@ -105,11 +103,11 @@ def predict():
         filename = file.filename
         file_path = os.path.join('static//', filename)
         file.save(file_path)
-        extracted_label = extract_label(file_path)
-        if extracted_label is not None:
-            product = extracted_label
-        else:
-            product = prediction(file_path)
+        #extracted_label = extract_label(file_path)
+        #if extracted_label is not None:
+            #product = extracted_label
+        #else:
+        product = prediction(file_path)
         sub_cat,cat = get_category_detail(product)
     return render_template('predict.html', product = product, sub_cat = sub_cat,cat = cat,user_image = file_path)  
 
