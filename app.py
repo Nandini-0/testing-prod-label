@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
-from fastai.vision import *
-from fastai.vision import load_learner
+#from fastai.vision import *
+#from fastai.vision import load_learner
 import numpy as np 
 import pandas as pd
 #from fastai.vision.widgets import *
@@ -79,7 +79,7 @@ def get_model():
     global model
     #with open('export.pkl','rb') as f:model = pkl.load(f)f.close()
     #model = pickle.load(open('export.pkl'), 'rb')
-    model = load_learner(path="",fname ='3_epoches_model.pkl')
+    model = load_learner(fname ='3_epoches_model.pkl')
     print("Model loaded!")
    
 def prediction(img_path):
